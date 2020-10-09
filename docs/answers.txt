@@ -1,0 +1,84 @@
+I finished the tutorials on 10/9/2020
+I joined GitHub on 7/2/2014
+
+
+1)
+
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 500 bytes | 500.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Alixer/assignment2.git
+   5f4ce16..dfac1c1  master -> master
+
+
+2)
+
+There has been 9 commits done to the repository.
+The git command I used to identify this is:
+$ git rev-list --all --count
+
+
+3)
+
+README.md was last modified on: Fri Oct 9 06:35:17 2020 -0400
+The git command I used to identify this is:
+$ git log --follow README.md
+
+
+4)
+
+Reasons why are used in a Git repository:
+  1: So that multiple individuals can work on the same project
+     without intefering with each other's work.
+  2: So that one (or many) could have the ability to revert to 
+     previous versions of the project if they are unsatisfied with
+     the current master version. (version control).
+
+
+5)
+
+The differences between "git log" and "get status" are"
+  git log: Outputs the commit history and their associated messages, starting from
+           the most recent commit, to the terminal screen.
+  git status: Outputs files that have been modified and are pending to be committed to the terminal screen.
+
+
+6)
+
+The command I would use to see the commits where "Vehicle.h was one of the
+committed files is:
+$ git log --follow Vehicle.h
+
+
+7)
+The command I would use to see the commits whose commit message contains the word "file" is:
+$ git log --grep="file"
+
+
+8)
+
+Inheritance: A mechanism by which an object acquires the some/all properties of another object.
+             It supports the concept of hierarchical classification.
+Polymorphism: The ability of an object to take on many forms and to be processed differently depending on                   its data type. One method can have multiple implementations for a certain class of action and
+              which one gets used is decided at runtime.
+Encapsulation: The process of combining data and functions into a single unit called a class; it keeps data                both safe from outside interference and misuse.
+
+
+9)
+
+The main difference between a Dictator and Lieutenants Workflow and an Integration Manager Workflow is:
+Dictator and Lieutenants: Everyone can pull from the blessed repository but only the dictator can
+                          push to it. The developers have to push to lieutenants who then push to the                                   dictator. The leuitenants solve conflicts and the dictoator solves any arising
+                          conflicts.
+Integration Manager: Each developer pushes to their own public repositories that get pushed to the                                 integration manager. The integration manager then pushes to the blessed repository.
+                     The integration manager handles all conflict resolution.
+
+
+10)
+
+Since there's such a huge team team, it would be better for the pushes to go through a couple conflict resolution processes to makes sure everyone syncs up correctly, rather then all of all of the data just flowing to one central location at once. In the latter scenario, developers have to solve conflicts amongst themselves which can most likely turn out chaotic for a large group. The leuitenants and dictator can handle that task in the Dictator and Leuitenants workflow.
